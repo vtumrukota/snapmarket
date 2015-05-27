@@ -32,7 +32,11 @@ angular.module('sell.controllers', [])
 
 })
 .controller('SellCreateListingCtrl', function($rootScope , $scope ) {
-  var headerBarOffset = 44;
+  //offset to adjust for screen size/CSS properties
+  var headerBarOffsetX = 15;
+  var headerBarOffsetY = 63;
+
+  //function to create a tag on the tap coordinate
   var getTap = function(event){
     var tap = { x:0, y:0 };
     if(event.gesture.touches.length>0){
@@ -40,9 +44,10 @@ angular.module('sell.controllers', [])
       tap.x = tt.clientX || tt.pageX || tt.screenX ||0;
       tap.y = tt.clientY || tt.pageY || tt.screenY ||0;  
     }
-    return {x : tap.x , y : tap.y-headerBarOffset};
+    return {x : tap.x - headerBarOffsetX , y : tap.y - headerBarOffsetY};
   }
   $scope.position = function(tap){
+    //create CSS for tag based on its coordinate
     return {position: 'absolute',
             left: tap.x+'px',
             top: tap.y+'px'};
