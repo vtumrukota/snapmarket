@@ -21,11 +21,14 @@
 }
 
 /*------------------Navigaton Bar for Nested Views----------------------*/
-.bar.bar-header .button+.title {
+.bar .button+.title {
   color: #FFFFFF;
   text-align: center;
-  left: 0;
-  right: 0;
+  
+}
+
+.bar .button{
+  min-width: 75px;
 }
 
 /* back button */
@@ -153,6 +156,9 @@ Created from ion-list
   padding: 0;
 }
 
+.list .item {
+  min-height: 100px;
+}
 
 /*
 light-blue color for remaining the remaining itemDetail view
