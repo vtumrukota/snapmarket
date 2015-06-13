@@ -232,6 +232,8 @@ For large screens: ipad/computer screen
   }
 }
 
+/*-------------------------Transaction Tab----------------------------------*/
+
 .cardTitle {
   font-size: 1.5em;
 }
@@ -335,6 +337,7 @@ For large screens: ipad/computer screen
 }
 
 .noListings {
+  margin-top: 2em;
   text-align: center;
   font-size: 1.5em;
 }
@@ -372,6 +375,10 @@ For large screens: ipad/computer screen
 
 a.item {
   padding: 0;
+}
+
+.tabs-top > .tabs {
+  top: 20px;
 }
 
 .tabs-striped.tabs-background-positive .tabs  {
@@ -442,6 +449,8 @@ a.item {
   bottom: 0;
   background-color: rgba(0,0,0,0.7);
 }
+
+/*----------------------------------------------------------------*/
 
 #addButton {
   text-transform: none;
