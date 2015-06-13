@@ -1,7 +1,7 @@
 /*-----------------Login Page---------------------*/
 .loginPage {
   text-align: center;
-  background: url('/images/login.png');
+  background: url('../images/login.png');
   background-size: cover;
   background-position: center;
 }
@@ -38,7 +38,7 @@
 /*--------------------Profile Page---------------------------------*/
 
 .profile{
-  background: url('/images/money.jpg');
+  background: url('../images/money.jpg');
 }
 
 .userInfo{
